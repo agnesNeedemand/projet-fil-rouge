@@ -27,6 +27,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 | 4     | Tester en local avec `serve`       |
 | 5     | Déployer avec `gh-deploy`          |
 
+NOte : Ctrl + C pour stop le serveur
 
 ## Site accessible 
 

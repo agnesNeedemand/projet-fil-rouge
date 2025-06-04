@@ -14,3 +14,6 @@
 - [ ] Ajouter une page d’accueil à la doc
 - [ ] Documenter l'architecture du projet
 - [ ] Lister les dépendances principales
+
+
+
