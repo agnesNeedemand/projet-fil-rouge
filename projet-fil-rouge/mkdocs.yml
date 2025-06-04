@@ -1,1 +1,3 @@
-site_name: My Docs
+site_name: Documentation du projet fil rouge
+theme:
+  name: material

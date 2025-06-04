@@ -1,4 +1,4 @@
-# Checklist de bonnes pratiques
+# Bonnes pratiques
 
 ## 🛠️ Préparation du projet
 
@@ -6,6 +6,8 @@
 - [x] Ajouter un fichier README.md
 - [x] Ajouter un `.gitignore`
 - [ ] Définir un fichier `LICENSE`
+
+
 
 ## 📄 Documentation
 
