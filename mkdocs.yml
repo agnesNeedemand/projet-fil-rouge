@@ -1,6 +1,13 @@
 site_name: Documentation PFR
 theme:
-  name: slate
+  name: material
 nav:
   - Accueil: index.md 
   - Sécurité: securite.md
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
