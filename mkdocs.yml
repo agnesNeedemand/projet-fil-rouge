@@ -10,12 +10,12 @@ nav:
   - Conception: 
     - conception/index.md
   - Gestion de projet:
-    - gestion/index.md
-    - gestion/git.md
+    - Introduction: gestion/index.md
+    - Versioning: gestion/git.md
   - Sécurité: 
-    - securite/index.md
+    - Checklist: securite/index.md
   - Documentation: 
-    - documentation/index.md
+    - Introduction: documentation/index.md
     - Documentation API: documentation/api.md
 markdown_extensions:
   - admonition

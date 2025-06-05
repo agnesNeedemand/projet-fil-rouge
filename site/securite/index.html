@@ -20,7 +20,7 @@
     
     
       
-        <title>✅ Check-list Sécurité - Documentation PFR</title>
+        <title>Checklist - Documentation PFR</title>
       
     
     
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ✅ Check-list Sécurité
+              Checklist
             
           </span>
         </div>
@@ -447,7 +447,7 @@
   
   
   <span class="md-ellipsis">
-    Gestion de projet
+    Introduction
     
   </span>
   
@@ -470,7 +470,7 @@
   
   
   <span class="md-ellipsis">
-    Bonnes pratiques sur GitHub
+    Versioning
     
   </span>
   
@@ -557,7 +557,7 @@
   
   
   <span class="md-ellipsis">
-    ✅ Check-list Sécurité
+    Checklist
     
   </span>
   
@@ -570,7 +570,7 @@
   
   
   <span class="md-ellipsis">
-    ✅ Check-list Sécurité
+    Checklist
     
   </span>
   
@@ -595,7 +595,7 @@
         <li class="md-nav__item">
   <a href="#code-backend" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Backend
+      ⚙️ Code Backend
     </span>
   </a>
   
@@ -604,7 +604,7 @@
         <li class="md-nav__item">
   <a href="#frontend" class="md-nav__link">
     <span class="md-ellipsis">
-      Frontend
+      🖼️ Frontend
     </span>
   </a>
   
@@ -613,7 +613,7 @@
         <li class="md-nav__item">
   <a href="#base-de-donnees" class="md-nav__link">
     <span class="md-ellipsis">
-      Base de données
+      🗄️ Base de données
     </span>
   </a>
   
@@ -690,7 +690,7 @@
   
   
   <span class="md-ellipsis">
-    Documentation d'un projet
+    Introduction
     
   </span>
   
@@ -760,7 +760,7 @@
         <li class="md-nav__item">
   <a href="#code-backend" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Backend
+      ⚙️ Code Backend
     </span>
   </a>
   
@@ -769,7 +769,7 @@
         <li class="md-nav__item">
   <a href="#frontend" class="md-nav__link">
     <span class="md-ellipsis">
-      Frontend
+      🖼️ Frontend
     </span>
   </a>
   
@@ -778,7 +778,7 @@
         <li class="md-nav__item">
   <a href="#base-de-donnees" class="md-nav__link">
     <span class="md-ellipsis">
-      Base de données
+      🗄️ Base de données
     </span>
   </a>
   
@@ -800,12 +800,14 @@
 
 
 
-<h1 id="check-list-securite">✅ Check-list Sécurité<a class="headerlink" href="#check-list-securite" title="Permanent link">&para;</a></h1>
-<h2 id="code-backend">Code Backend<a class="headerlink" href="#code-backend" title="Permanent link">&para;</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Utiliser des requêtes préparées (PDO, Doctrine, Eloquent, etc.)</li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Valider toutes les données en entrée</p>
+<h1 id="check-list-securite">Check-list Sécurité<a class="headerlink" href="#check-list-securite" title="Permanent link">&para;</a></h1>
+<h2 id="code-backend">⚙️ Code Backend<a class="headerlink" href="#code-backend" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Utiliser des requêtes préparées (PDO, Doctrine, Eloquent, etc.)</p>
+</li>
+<li>
+<p>Valider toutes les données en entrée :</p>
 <ul>
 <li>Filtrer les caractères indésitables</li>
 <li>Vérifier le format ( numérique, chaine de caractère, date ...)</li>
@@ -813,62 +815,68 @@
 <li>Vérifier la longueur des données</li>
 </ul>
 </li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Echapper toutes les données en sortie ( HTML, JSON, ... ) au cas ou il y aurait du code mal vaillant dans votre base de données.</p>
+<li>
+<p>Echapper toutes les données en sortie ( HTML, JSON, ... ) au cas ou il y aurait du code mal vaillant dans votre base de données.</p>
 </li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Gérer les erreurs sans les afficher</p>
+<li>
+<p>Gérer les erreurs sans les afficher :</p>
 <ul>
 <li>Enregistrer des logs</li>
 <li>Afficher des messages utilisateurs neutres ( Ne pas dévoiler trop d'information )</li>
 </ul>
 </li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Implémenter une authentification sécurisée</p>
+<li>
+<p>Implémenter une authentification sécurisée</p>
 <ul>
 <li>Hash avec bcrypt ou argon2</li>
 <li>Rate limiting (bruteforce)</li>
 <li>Jetons CSRF pour les formulaires (prevu par les framework)</li>
 </ul>
 </li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Gérer les rôles et permissions (RBAC)</p>
+<li>
+<p>Gérer les rôles et permissions (RBAC)</p>
 </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Journaliser les actions sensibles (connexion, modification de données, etc.)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Utiliser un analyseur de code statique PHPStan (niveau 5 minimum ) </li>
 </ul>
-<h2 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h2>
-<ul class="task-list">
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Valider les formulaires côté client (feedback immédiat, economie de requete serveur)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>RBAC signifie Role-Based Access Control, en français : Contrôle d’Accès basé sur les Rôles.</p>
+</div>
+<ul>
+<li>Journaliser les actions sensibles (connexion, modification de données, etc.)</li>
+<li>Utiliser un analyseur de code statique PHPStan (niveau 5 minimum ) </li>
+</ul>
+<h2 id="frontend">🖼️ Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Valider les formulaires côté client (feedback immédiat, economie de requete serveur)</p>
 </li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Ne jamais faire confiance aux données entrées par l'utilisateur</p>
+<li>
+<p>Ne jamais faire confiance aux données entrées par l'utilisateur</p>
 </li>
-<li class="task-list-item">
-<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Empêcher l'insersion de HTML brut dans une page à partir d'une variable (attaque XSS)</p>
+<li>
+<p>Empêcher l'insersion de HTML brut dans une page à partir d'une variable (attaque XSS)</p>
 </li>
 </ul>
 <p>Si c'est vraiment nécéssaire (Exemple l'utilisateur doit ecrire du texte avec des balises de code) Il faut nettoyer le HTML avant de l'afficher. 
  Eventuellement utiliser <strong>DOMpurify</strong>, accessible par npm ou CDN.</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Utiliser npm audit pour détecter les dépendances vulnérables</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Éviter le stockage de données sensibles dans le localStorage/sessionStorage</li>
+<ul>
+<li>Utiliser npm audit pour détecter les dépendances vulnérables</li>
+<li>Éviter le stockage de données sensibles dans le localStorage/sessionStorage</li>
 </ul>
-<h2 id="base-de-donnees">Base de données<a class="headerlink" href="#base-de-donnees" title="Permanent link">&para;</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Utiliser un utilisateur MySQL avec droits limités</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Définir des contraintes d’intégrité (clé étrangère, NOT NULL, UNIQUE…)</li>
+<h2 id="base-de-donnees">🗄️ Base de données<a class="headerlink" href="#base-de-donnees" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Utiliser un utilisateur MySQL avec droits limités</li>
+<li>Définir des contraintes d’intégrité (clé étrangère, NOT NULL, UNIQUE…)</li>
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">Attention !</p>
 <p>Ne pas rendre un champs nullable parce que c'est plus simple à coder</p>
 </div>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Ajouter des triggers pour protéger les données sensibles ou historiques</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Mettre en place des sauvegardes régulières</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Limiter les acces avec GANTT si possible</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Conserver des historiques, rien n'est vraiment effacer mais tout est archiver.</li>
+<ul>
+<li>Ajouter des triggers pour protéger les données sensibles ou historiques</li>
+<li>Mettre en place des sauvegardes régulières</li>
+<li>Limiter les acces avec GANTT si possible</li>
+<li>Conserver des historiques, rien n'est vraiment effacer mais tout est archiver.</li>
 </ul>
 
 

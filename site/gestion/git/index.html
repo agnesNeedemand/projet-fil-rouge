@@ -20,7 +20,7 @@
     
     
       
-        <title>Bonnes pratiques sur GitHub - Documentation PFR</title>
+        <title>Versioning - Documentation PFR</title>
       
     
     
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bonnes pratiques sur GitHub
+              Versioning
             
           </span>
         </div>
@@ -452,7 +452,7 @@
   
   
   <span class="md-ellipsis">
-    Gestion de projet
+    Introduction
     
   </span>
   
@@ -484,7 +484,7 @@
   
   
   <span class="md-ellipsis">
-    Bonnes pratiques sur GitHub
+    Versioning
     
   </span>
   
@@ -497,7 +497,7 @@
   
   
   <span class="md-ellipsis">
-    Bonnes pratiques sur GitHub
+    Versioning
     
   </span>
   
@@ -520,9 +520,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#structure-claire-du-depot-repo" class="md-nav__link">
+  <a href="#preparation-du-projet" class="md-nav__link">
     <span class="md-ellipsis">
-      Structure claire du dépôt (repo)
+      🔧 Préparation du projet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-claire-du-depot" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Structure claire du dépôt
     </span>
   </a>
   
@@ -531,31 +540,25 @@
         <li class="md-nav__item">
   <a href="#commits-clairs-et-frequents" class="md-nav__link">
     <span class="md-ellipsis">
-      Commits clairs et fréquents
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Commits clairs et fréquents">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilisation-de-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilisation de branches
+      💬 Commits clairs et fréquents
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-de-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➰ Utilisation de branches
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#pull-requests-pr" class="md-nav__link">
     <span class="md-ellipsis">
-      Pull Requests (PR)
+      ✅ Pull Requests (PR)
     </span>
   </a>
   
@@ -564,7 +567,7 @@
         <li class="md-nav__item">
   <a href="#utilisation-des-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      Utilisation des Issues
+      📝 Utilisation des Issues
     </span>
   </a>
   
@@ -573,7 +576,7 @@
         <li class="md-nav__item">
   <a href="#documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentation
+      📘 Documentation
     </span>
   </a>
   
@@ -582,66 +585,27 @@
         <li class="md-nav__item">
   <a href="#les-fichiers-ignores" class="md-nav__link">
     <span class="md-ellipsis">
-      Les fichiers ignorés
+      ❌ Les fichiers ignorés
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Les fichiers ignorés">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#que-faut-il-generalement-ignorer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Que faut-il généralement ignorer ?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bonnes-pratiques-associees" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bonnes pratiques associées
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#les-variables-denvironnement" class="md-nav__link">
     <span class="md-ellipsis">
-      Les variables d'environnement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les variables d&#39;environnement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#le-fichier-env" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le fichier .env
+      🛠️ Les variables d'environnement
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#le-fichier-envexample" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#suppression-de-fichier" class="md-nav__link">
     <span class="md-ellipsis">
-      Le fichier .env.example
+      🧹 Suppression de fichier
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -716,7 +680,7 @@
   
   
   <span class="md-ellipsis">
-    ✅ Check-list Sécurité
+    Checklist
     
   </span>
   
@@ -789,7 +753,7 @@
   
   
   <span class="md-ellipsis">
-    Documentation d'un projet
+    Introduction
     
   </span>
   
@@ -857,9 +821,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#structure-claire-du-depot-repo" class="md-nav__link">
+  <a href="#preparation-du-projet" class="md-nav__link">
     <span class="md-ellipsis">
-      Structure claire du dépôt (repo)
+      🔧 Préparation du projet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-claire-du-depot" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Structure claire du dépôt
     </span>
   </a>
   
@@ -868,31 +841,25 @@
         <li class="md-nav__item">
   <a href="#commits-clairs-et-frequents" class="md-nav__link">
     <span class="md-ellipsis">
-      Commits clairs et fréquents
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Commits clairs et fréquents">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#utilisation-de-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Utilisation de branches
+      💬 Commits clairs et fréquents
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-de-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➰ Utilisation de branches
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#pull-requests-pr" class="md-nav__link">
     <span class="md-ellipsis">
-      Pull Requests (PR)
+      ✅ Pull Requests (PR)
     </span>
   </a>
   
@@ -901,7 +868,7 @@
         <li class="md-nav__item">
   <a href="#utilisation-des-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      Utilisation des Issues
+      📝 Utilisation des Issues
     </span>
   </a>
   
@@ -910,7 +877,7 @@
         <li class="md-nav__item">
   <a href="#documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentation
+      📘 Documentation
     </span>
   </a>
   
@@ -919,66 +886,27 @@
         <li class="md-nav__item">
   <a href="#les-fichiers-ignores" class="md-nav__link">
     <span class="md-ellipsis">
-      Les fichiers ignorés
+      ❌ Les fichiers ignorés
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Les fichiers ignorés">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#que-faut-il-generalement-ignorer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Que faut-il généralement ignorer ?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bonnes-pratiques-associees" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bonnes pratiques associées
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#les-variables-denvironnement" class="md-nav__link">
     <span class="md-ellipsis">
-      Les variables d'environnement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Les variables d&#39;environnement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#le-fichier-env" class="md-nav__link">
-    <span class="md-ellipsis">
-      Le fichier .env
+      🛠️ Les variables d'environnement
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#le-fichier-envexample" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#suppression-de-fichier" class="md-nav__link">
     <span class="md-ellipsis">
-      Le fichier .env.example
+      🧹 Suppression de fichier
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -999,7 +927,18 @@
 
 
 <h1 id="bonnes-pratiques-sur-github">Bonnes pratiques sur GitHub<a class="headerlink" href="#bonnes-pratiques-sur-github" title="Permanent link">&para;</a></h1>
-<h2 id="structure-claire-du-depot-repo">Structure claire du dépôt (repo)<a class="headerlink" href="#structure-claire-du-depot-repo" title="Permanent link">&para;</a></h2>
+<h2 id="preparation-du-projet">🔧 Préparation du projet<a class="headerlink" href="#preparation-du-projet" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Créer le dépôt GitHub</li>
+<li>Ajouter un fichier README.md</li>
+<li>Ajouter un <code>.gitignore</code></li>
+<li>Définir un fichier <code>LICENSE</code></li>
+</ul>
+<h2 id="structure-claire-du-depot">📁 Structure claire du dépôt<a class="headerlink" href="#structure-claire-du-depot" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>repo = dépot</p>
+</div>
 <ol>
 <li>Utiliser une structure propre</li>
 <li>Le fichier README.md est essentiel pour expliquer l'objectif du projet, comment l’installer, l’utiliser, etc.</li>
@@ -1017,7 +956,7 @@
 <p class="admonition-title">Warning</p>
 <p>Pas de projet dans le projet</p>
 </div>
-<h2 id="commits-clairs-et-frequents">Commits clairs et fréquents<a class="headerlink" href="#commits-clairs-et-frequents" title="Permanent link">&para;</a></h2>
+<h2 id="commits-clairs-et-frequents">💬 Commits clairs et fréquents<a class="headerlink" href="#commits-clairs-et-frequents" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Des messages de commit explicites :</li>
 <li>Commits fréquents = historique compréhensible et possibilité de revenir en arrière facilement.</li>
@@ -1025,17 +964,17 @@
 <div class="highlight"><pre><span></span><code>✅ Bon : &quot;Corrige bug d’affichage du tableau Markdown&quot;
 ❌ Mauvais : &quot;fix&quot; ou &quot;update&quot;
 </code></pre></div>
-<h3 id="utilisation-de-branches">Utilisation de branches<a class="headerlink" href="#utilisation-de-branches" title="Permanent link">&para;</a></h3>
+<h2 id="utilisation-de-branches">➰ Utilisation de branches<a class="headerlink" href="#utilisation-de-branches" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Ne travaille <strong>pas directement sur <code>main</code></strong>. Utilise une branche pour chaque fonctionnalité ou correction.</li>
 </ol>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feat/nouvelle-fonction
 </code></pre></div>
-<h2 id="pull-requests-pr">Pull Requests (PR)<a class="headerlink" href="#pull-requests-pr" title="Permanent link">&para;</a></h2>
+<h2 id="pull-requests-pr">✅ Pull Requests (PR)<a class="headerlink" href="#pull-requests-pr" title="Permanent link">&para;</a></h2>
 <p>Faire une <strong>PR</strong> pour intégrer ton travail à <code>main</code> et permettre la revue de code (même pour un seul developpeur, c’est une bonne habitude !).</p>
-<h2 id="utilisation-des-issues">Utilisation des Issues<a class="headerlink" href="#utilisation-des-issues" title="Permanent link">&para;</a></h2>
+<h2 id="utilisation-des-issues">📝 Utilisation des Issues<a class="headerlink" href="#utilisation-des-issues" title="Permanent link">&para;</a></h2>
 <p>Utiliser les <strong>issues</strong> pour suivre les bugs, idées ou tâches à faire.</p>
-<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<h2 id="documentation">📘 Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
 <p>Mettre de la documentation dans un repo</p>
 <p>Il est <strong>recommandé</strong> de mettre de la documentation dans un repo :</p>
 <ul>
@@ -1043,7 +982,7 @@
 <li><strong><code>/docs/</code></strong> : pour des documents plus détaillés</li>
 <li>Génération d'un site statique à partir de cette doc avec <strong>GitHub Pages</strong> (ex : avec MkDocs ou Docusaurus)</li>
 </ul>
-<h2 id="les-fichiers-ignores">Les fichiers ignorés<a class="headerlink" href="#les-fichiers-ignores" title="Permanent link">&para;</a></h2>
+<h2 id="les-fichiers-ignores">❌ Les fichiers ignorés<a class="headerlink" href="#les-fichiers-ignores" title="Permanent link">&para;</a></h2>
 <p>Le fichier .gitignore sert à exclure certains fichiers ou dossiers du suivi Git. Cela évite d’envoyer sur GitHub des fichiers sensibles, inutiles, temporaires ou propres à votre environnement local.</p>
 <h3 id="que-faut-il-generalement-ignorer">Que faut-il généralement ignorer ?<a class="headerlink" href="#que-faut-il-generalement-ignorer" title="Permanent link">&para;</a></h3>
 <p>Voici une base typique :
@@ -1079,7 +1018,7 @@ vendor/
 <p>Ne jamais commettre de fichiers dans node_modules/ ou vendor/ — ces dossiers sont recréés automatiquement via npm install ou composer install.</p>
 <p>Fournir un fichier package.json ou composer.json (équivalent de requirements.txt) dans votre dépôt pour faciliter l’installation des dépendances.</p>
 <p>Conserver les scripts de build (ex. : build.sh, Makefile, ou mkdocs.yml) dans le dépôt pour que le projet reste facilement reproductible.</p>
-<h2 id="les-variables-denvironnement">Les variables d'environnement<a class="headerlink" href="#les-variables-denvironnement" title="Permanent link">&para;</a></h2>
+<h2 id="les-variables-denvironnement">🛠️ Les variables d'environnement<a class="headerlink" href="#les-variables-denvironnement" title="Permanent link">&para;</a></h2>
 <h3 id="le-fichier-env">Le fichier .env<a class="headerlink" href="#le-fichier-env" title="Permanent link">&para;</a></h3>
 <p>Le fichier .env contient des variables d’environnement sensibles, comme :</p>
 <div class="highlight"><pre><span></span><code><span class="na">API_KEY</span><span class="o">=</span><span class="s">abcdefgh12345678</span>
@@ -1103,6 +1042,40 @@ vendor/
 <span class="na">SECRET_KEY</span><span class="o">=</span><span class="s">change-me</span>
 </code></pre></div></p>
 <p>Cela montre clairement à vos collègues ou utilisateurs quelles variables sont nécessaires sans exposer vos propres données.</p>
+<h2 id="suppression-de-fichier">🧹 Suppression de fichier<a class="headerlink" href="#suppression-de-fichier" title="Permanent link">&para;</a></h2>
+<p>Horreur, j'ai des fichiers que je veux supprimer sur mon repo, car j'ai oublié de les ignorer.</p>
+<p>Pas de panique, cela arrive à tout le monde ! Voici comment <strong>supprimer proprement des fichiers déjà suivis par Git</strong> mais que vous souhaitez désormais ignorer via <code>.gitignore</code>.</p>
+<h3 id="etapes-pour-supprimer-des-fichiers-deja-versionnes">Étapes pour supprimer des fichiers déjà versionnés<a class="headerlink" href="#etapes-pour-supprimer-des-fichiers-deja-versionnes" title="Permanent link">&para;</a></h3>
+<p>Même si vous ajoutez les fichiers ou dossiers à <code>.gitignore</code>, Git continue de les suivre <strong>tant qu’ils sont déjà dans l’historique</strong>. Voici comment corriger cela :</p>
+<h4 id="1-ajouter-les-fichiersdossiers-a-gitignore">1. Ajouter les fichiers/dossiers à <code>.gitignore</code><a class="headerlink" href="#1-ajouter-les-fichiersdossiers-a-gitignore" title="Permanent link">&para;</a></h4>
+<p>Par exemple, vous ajoutez :</p>
+<div class="highlight"><pre><span></span><code>node_modules/
+.env
+site/
+</code></pre></div>
+<h4 id="2-supprimer-les-fichiers-du-suivi-git-sans-les-supprimer-localement">2. Supprimer les fichiers du suivi Git <strong>sans les supprimer localement</strong><a class="headerlink" href="#2-supprimer-les-fichiers-du-suivi-git-sans-les-supprimer-localement" title="Permanent link">&para;</a></h4>
+<p>Utilisez la commande suivante :</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rm<span class="w"> </span>--cached<span class="w"> </span>-r<span class="w"> </span>node_modules/<span class="w"> </span>.env<span class="w"> </span>site/
+</code></pre></div>
+<ul>
+<li><code>--cached</code> : supprime <strong>du suivi Git</strong>, mais <strong>pas du disque local</strong>.</li>
+<li><code>-r</code> : pour supprimer récursivement dans les dossiers.</li>
+</ul>
+<p>💡 Vous pouvez remplacer la liste par n’importe quel fichier ou dossier que vous voulez "désuivre".</p>
+<h4 id="3-committez-les-changements">3. Committez les changements<a class="headerlink" href="#3-committez-les-changements" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Supprime les fichiers ignorés du suivi Git&quot;</span>
+</code></pre></div>
+<h4 id="4-poussez-les-changements-vers-github">4. Poussez les changements vers GitHub<a class="headerlink" href="#4-poussez-les-changements-vers-github" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push
+</code></pre></div>
+<h4 id="astuce-bonus-tout-reinitialiser-optionnel">Astuce bonus : tout réinitialiser (optionnel)<a class="headerlink" href="#astuce-bonus-tout-reinitialiser-optionnel" title="Permanent link">&para;</a></h4>
+<p>Si vous avez modifié beaucoup de choses, vous pouvez forcer Git à ne suivre <strong>que les bons fichiers</strong>, avec :</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>--cached<span class="w"> </span>.
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Nettoyage complet des fichiers suivis par erreur&quot;</span>
+git<span class="w"> </span>push
+</code></pre></div>
+<p>⚠️ Cette commande est radicale, utilisez-la seulement si vous êtes sûr que tout est bien prêt dans <code>.gitignore</code>.</p>
 
 
 
