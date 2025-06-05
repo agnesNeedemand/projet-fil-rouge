@@ -28,11 +28,11 @@ Bienvenue dans la documentation du projet. Cette page vous guide à travers les 
 
 ---
 
-## 🌟 Qualité
+## 🌟 Critères de Qualité
 
 > Bonnes pratiques, gestion des accès, sécurité des données et audit.
 
-👉 [Accéder à la section Sécurité](qualite/index.md)
+👉 [Accéder à la section Critères de Qualité](qualite/index.md)
 
 ---
 
