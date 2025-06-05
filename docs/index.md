@@ -28,6 +28,14 @@ Bienvenue dans la documentation du projet. Cette page vous guide à travers les 
 
 ---
 
+## 🌟 Qualité
+
+> Bonnes pratiques, gestion des accès, sécurité des données et audit.
+
+👉 [Accéder à la section Sécurité](securite/index.md)
+
+---
+
 ## 📄 Documentation technique
 
 > Structure du projet, API, installation, environnement, checklist de production.

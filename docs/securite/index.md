@@ -17,7 +17,8 @@
     - Afficher des messages utilisateurs neutres ( Ne pas dévoiler trop d'information )
 
 -  Implémenter une authentification sécurisée
-    - Hash avec bcrypt ou argon2
+    - Ne jamais stocker de mots de passe en clair
+    - Hash avec bcrypt ou argon2 
     - Rate limiting (bruteforce)
     - Jetons CSRF pour les formulaires (prevu par les framework)
 
@@ -25,8 +26,13 @@
 !!! note
     RBAC signifie Role-Based Access Control, en français : Contrôle d’Accès basé sur les Rôles.
 
--  Journaliser les actions sensibles (connexion, modification de données, etc.)
--  Utiliser un analyseur de code statique PHPStan (niveau 5 minimum ) 
+- Journaliser les actions sensibles (connexion, modification de données, etc.)
+
+!!!danger Attention :
+    Ne jamais logguer des données sensibles (comme des mots de passe ou cartes bancaires)
+    
+- Utiliser un analyseur de code statique PHPStan (niveau 5 minimum ) 
+- Utiliser HTTPS uniquement
 
 ## 🖼️ Frontend
 

@@ -4,16 +4,21 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-
 nav:
   - Accueil: index.md 
   - Conception: 
     - Introduction: conception/index.md
+    - Testabilité: conception/test.md
   - Gestion de projet:
     - Introduction: gestion/index.md
     - Versioning: gestion/git.md
+    - gestion/sprint.md
   - Sécurité: 
     - Checklist: securite/index.md
+    - Danger des dépendances: securite/dependances.md
+  - Qualité:
+    - Introduction: qualite/index.md
+    - Testabilité: qualite/tests.md
   - Documentation: 
     - Introduction: documentation/index.md
     - Documentation API: documentation/api.md
