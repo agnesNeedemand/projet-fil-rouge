@@ -148,3 +148,62 @@ SECRET_KEY=change-me
 ```
 
 Cela montre clairement à vos collègues ou utilisateurs quelles variables sont nécessaires sans exposer vos propres données.
+
+
+## 🧹 Suppression de fichier
+
+Horreur, j'ai des fichiers que je veux supprimer sur mon repo, car j'ai oublié de les ignorer.
+
+Pas de panique, cela arrive à tout le monde ! Voici comment **supprimer proprement des fichiers déjà suivis par Git** mais que vous souhaitez désormais ignorer via `.gitignore`.
+
+### Étapes pour supprimer des fichiers déjà versionnés
+
+Même si vous ajoutez les fichiers ou dossiers à `.gitignore`, Git continue de les suivre **tant qu’ils sont déjà dans l’historique**. Voici comment corriger cela :
+
+#### 1. Ajouter les fichiers/dossiers à `.gitignore`
+
+Par exemple, vous ajoutez :
+
+```gitignore
+node_modules/
+.env
+site/
+```
+
+#### 2. Supprimer les fichiers du suivi Git **sans les supprimer localement**
+
+Utilisez la commande suivante :
+
+```bash
+git rm --cached -r node_modules/ .env site/
+```
+
+* `--cached` : supprime **du suivi Git**, mais **pas du disque local**.
+* `-r` : pour supprimer récursivement dans les dossiers.
+
+💡 Vous pouvez remplacer la liste par n’importe quel fichier ou dossier que vous voulez "désuivre".
+
+#### 3. Committez les changements
+
+```bash
+git commit -m "Supprime les fichiers ignorés du suivi Git"
+```
+
+#### 4. Poussez les changements vers GitHub
+
+```bash
+git push
+```
+
+#### Astuce bonus : tout réinitialiser (optionnel)
+
+Si vous avez modifié beaucoup de choses, vous pouvez forcer Git à ne suivre **que les bons fichiers**, avec :
+
+```bash
+git rm -r --cached .
+git add .
+git commit -m "Nettoyage complet des fichiers suivis par erreur"
+git push
+```
+
+⚠️ Cette commande est radicale, utilisez-la seulement si vous êtes sûr que tout est bien prêt dans `.gitignore`.
