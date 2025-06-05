@@ -46,7 +46,9 @@ Faire une **PR** pour intégrer ton travail à `main` et permettre la revue de c
 
 Utiliser les **issues** pour suivre les bugs, idées ou tâches à faire.
 
-## 📘 **Mettre de la documentation dans un repo**
+## Documentation 
+
+Mettre de la documentation dans un repo
 
 Il est **recommandé** de mettre de la documentation dans un repo :
 
@@ -91,3 +93,47 @@ vendor/
 .vscode/
 .idea/
 ```
+
+### Bonnes pratiques associées
+
+Ne jamais commettre de fichiers dans node_modules/ ou vendor/ — ces dossiers sont recréés automatiquement via npm install ou composer install.
+
+Fournir un fichier package.json ou composer.json (équivalent de requirements.txt) dans votre dépôt pour faciliter l’installation des dépendances.
+
+Conserver les scripts de build (ex. : build.sh, Makefile, ou mkdocs.yml) dans le dépôt pour que le projet reste facilement reproductible.
+
+
+## Les variables d'environnement
+
+### Le fichier .env
+
+Le fichier .env contient des variables d’environnement sensibles, comme :
+
+```ini
+API_KEY=abcdefgh12345678
+DATABASE_URL=postgres://user:pass@host/db
+SECRET_KEY=super-secret-value
+```
+
+Ce fichier ne doit jamais être versionné, car il contient des données confidentielles.
+
+Vous devez donc ajouter .env dans votre .gitignore :
+```gitignore
+.env
+```
+
+### Le fichier .env.example
+
+Ce fichier est une copie publique du fichier .env, sans les valeurs sensibles, mais avec les noms des variables attendues.
+
+👉 Cela permet aux autres contributeurs de comprendre quelles variables ils doivent définir.
+
+Exemple :
+```ini
+# .env.example
+API_KEY=your-api-key-here
+DATABASE_URL=your-db-url-here
+SECRET_KEY=change-me
+```
+
+Cela montre clairement à vos collègues ou utilisateurs quelles variables sont nécessaires sans exposer vos propres données.
