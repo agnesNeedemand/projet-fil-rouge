@@ -17,7 +17,7 @@ Exemple :
 └── .gitignore
 ```
 
-!!! Danger Attention
+!!! Warning Attention
     Pas de projet dans le projet
 
 ## Commits clairs et fréquents
@@ -65,31 +65,31 @@ Le fichier .gitignore sert à exclure certains fichiers ou dossiers du suivi Git
 
 Voici une base typique :
 ```markdown
-# 📁 Fichiers système
+# Fichiers système
 .DS_Store
 Thumbs.db
 
-# 🧪 Environnements virtuels et variables sensibles
+# Environnements virtuels et variables sensibles
 venv/
 .env
 *.env
 
-# ⚙️ Fichiers de configuration personnels (Python, logs, cache)
+# Fichiers de configuration personnels (Python, logs, cache)
 *.pyc
 *.log
 *.sqlite3
 __pycache__/
 
-# 🚧 Dossiers générés (build / static / MkDocs / dist)
+# Dossiers générés (build / static / MkDocs / dist)
 site/
 dist/
 build/
 
-# 📦 Dépendances
+# Dépendances
 node_modules/
 vendor/
 
-# 🧠 Fichiers d’IDE ou éditeurs
+# Fichiers d’IDE ou éditeurs
 .vscode/
 .idea/
 ```
@@ -126,7 +126,8 @@ Vous devez donc ajouter .env dans votre .gitignore :
 
 Ce fichier est une copie publique du fichier .env, sans les valeurs sensibles, mais avec les noms des variables attendues.
 
-👉 Cela permet aux autres contributeurs de comprendre quelles variables ils doivent définir.
+!!! note 
+    Cela permet aux autres contributeurs de comprendre quelles variables ils doivent définir.
 
 Exemple :
 ```ini
