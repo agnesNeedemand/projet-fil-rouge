@@ -50,5 +50,3 @@ La qualité perçue par le client repose autant sur la performance du logiciel q
 ## **Conclusion**
 
 La qualité d’un projet informatique résulte d’un ensemble de bonnes pratiques techniques, méthodologiques et humaines. Un code bien structuré, des tests rigoureux, le respect des normes et une communication fluide avec le client sont autant d’éléments qui contribuent à un projet réussi. En visant l’excellence à chaque étape, vous vous assurez non seulement la satisfaction du client, mais aussi la pérennité de votre solution dans le temps.
-
-Souhaitez-vous que je transforme cet article en version PDF ou PowerPoint ?
