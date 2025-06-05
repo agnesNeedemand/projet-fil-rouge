@@ -12,13 +12,15 @@
         <link rel="prev" href="../">
       
       
+        <link rel="next" href="../../securite/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Documentation API - Documentation PFR</title>
+        <title>Bonnes pratiques sur GitHub - Documentation PFR</title>
       
     
     
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#documenter-une-api" class="md-skip">
+        <a href="#bonnes-pratiques-sur-github" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Documentation API
+              Bonnes pratiques sur GitHub
             
           </span>
         </div>
@@ -204,11 +206,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../gestion/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -244,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../documentation/" class="md-tabs__link">
           
   
   
@@ -394,26 +396,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -426,7 +433,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Gestion de projet
@@ -440,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gestion/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -460,10 +467,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../gestion/git/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Bonnes pratiques sur GitHub
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -474,6 +503,152 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#structure-claire-du-depot-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure claire du dépôt (repo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commits-clairs-et-frequents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commits clairs et fréquents
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commits clairs et fréquents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utilisation-de-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilisation de branches
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Requests (PR)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-des-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilisation des Issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-fichiers-ignores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les fichiers ignorés
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les fichiers ignorés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-faut-il-generalement-ignorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Que faut-il généralement ignorer ?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bonnes-pratiques-associees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonnes pratiques associées
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-variables-denvironnement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les variables d'environnement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les variables d&#39;environnement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-fichier-env" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le fichier .env
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-fichier-envexample" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le fichier .env.example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -563,31 +738,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -600,7 +770,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Documentation
@@ -614,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../documentation/" class="md-nav__link">
         
   
   
@@ -634,32 +804,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Documentation API
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../documentation/api/" class="md-nav__link">
         
   
   
@@ -670,158 +818,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#criteres-dune-bonne-documentation-dapi" class="md-nav__link">
-    <span class="md-ellipsis">
-      Critères d’une bonne documentation d’API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-avec-postman" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation avec Postman
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Documentation avec Postman">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#etapes" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Étapes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#avantages" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Avantages
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-avec-openapi" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation avec OpenAPI
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Documentation avec OpenAPI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#etapes_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Étapes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#avantages_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Avantages
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-avec-bruno" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation avec Bruno
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Documentation avec Bruno">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#etapes_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Étapes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#avantages_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Avantages
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#faire-une-documentation-vanilla" class="md-nav__link">
-    <span class="md-ellipsis">
-      Faire une documentation vanilla
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Faire une documentation vanilla">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#structure-typique" class="md-nav__link">
-    <span class="md-ellipsis">
-      Structure typique
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -861,37 +857,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#criteres-dune-bonne-documentation-dapi" class="md-nav__link">
+  <a href="#structure-claire-du-depot-repo" class="md-nav__link">
     <span class="md-ellipsis">
-      Critères d’une bonne documentation d’API
+      Structure claire du dépôt (repo)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-avec-postman" class="md-nav__link">
+  <a href="#commits-clairs-et-frequents" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentation avec Postman
+      Commits clairs et fréquents
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Documentation avec Postman">
+    <nav class="md-nav" aria-label="Commits clairs et fréquents">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etapes" class="md-nav__link">
+  <a href="#utilisation-de-branches" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Étapes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#avantages" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Avantages
+      Utilisation de branches
     </span>
   </a>
   
@@ -903,28 +890,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-avec-openapi" class="md-nav__link">
+  <a href="#pull-requests-pr" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentation avec OpenAPI
+      Pull Requests (PR)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Documentation avec OpenAPI">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation-des-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilisation des Issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-fichiers-ignores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Les fichiers ignorés
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Les fichiers ignorés">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etapes_1" class="md-nav__link">
+  <a href="#que-faut-il-generalement-ignorer" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Étapes
+      Que faut-il généralement ignorer ?
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#avantages_1" class="md-nav__link">
+  <a href="#bonnes-pratiques-associees" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Avantages
+      Bonnes pratiques associées
     </span>
   </a>
   
@@ -936,52 +950,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-avec-bruno" class="md-nav__link">
+  <a href="#les-variables-denvironnement" class="md-nav__link">
     <span class="md-ellipsis">
-      Documentation avec Bruno
+      Les variables d'environnement
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Documentation avec Bruno">
+    <nav class="md-nav" aria-label="Les variables d&#39;environnement">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etapes_2" class="md-nav__link">
+  <a href="#le-fichier-env" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Étapes
+      Le fichier .env
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#avantages_2" class="md-nav__link">
+  <a href="#le-fichier-envexample" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Avantages
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#faire-une-documentation-vanilla" class="md-nav__link">
-    <span class="md-ellipsis">
-      Faire une documentation vanilla
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Faire une documentation vanilla">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#structure-typique" class="md-nav__link">
-    <span class="md-ellipsis">
-      Structure typique
+      Le fichier .env.example
     </span>
   </a>
   
@@ -1008,153 +998,111 @@
 
 
 
-<h1 id="documenter-une-api">Documenter une API<a class="headerlink" href="#documenter-une-api" title="Permanent link">&para;</a></h1>
-<p>Voici un exemple de endpoint documenter. </p>
-<blockquote>
-<p>GET /users</p>
-<p><strong>Description</strong> : Liste tous les utilisateurs</p>
-<p><strong>Paramètres</strong> :</p>
-<ul>
-<li><code>page</code> (int) : Numéro de page</li>
-</ul>
-<p><strong>Réponse</strong> :</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jean&quot;</span><span class="w"> </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;nom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Marie&quot;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">]</span>
+<h1 id="bonnes-pratiques-sur-github">Bonnes pratiques sur GitHub<a class="headerlink" href="#bonnes-pratiques-sur-github" title="Permanent link">&para;</a></h1>
+<h2 id="structure-claire-du-depot-repo">Structure claire du dépôt (repo)<a class="headerlink" href="#structure-claire-du-depot-repo" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Utiliser une structure propre</li>
+<li>Le fichier README.md est essentiel pour expliquer l'objectif du projet, comment l’installer, l’utiliser, etc.</li>
+</ol>
+<p>Exemple : </p>
+<div class="highlight"><pre><span></span><code>/mon-projet
+├──<span class="w"> </span>README.md
+├──<span class="w"> </span>CONTRIBUTING.md
+├──<span class="w"> </span>docs/
+├──<span class="w"> </span>src/
+├──<span class="w"> </span>tests/
+└──<span class="w"> </span>.gitignore
 </code></pre></div>
-<p>Cette structure assez classique apporte sufisament d'information pour comprendre l'API sans même la tester.</p>
-<h2 id="criteres-dune-bonne-documentation-dapi">Critères d’une bonne documentation d’API<a class="headerlink" href="#criteres-dune-bonne-documentation-dapi" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>Clarté</strong> : Décrivez précisément chaque endpoint, paramètre, et réponse.</p>
-</li>
-<li>
-<p><strong>Exemples</strong> : Fournissez des exemples de requêtes (curl, Postman, etc.)</p>
-</li>
-<li>
-<p><strong>Formatage</strong> : Utilisez une structure claire (titres, tableaux, code formaté).</p>
-</li>
-<li>
-<p><strong>Actualisation</strong> : Gardez la documentation à jour avec les changements de l’API.</p>
-</li>
-<li>
-<p><strong>Navigation facile</strong> : Table des matières, liens entre sections, recherche.</p>
-</li>
-<li>
-<p><strong>Testabilité</strong> : Intégration avec des outils comme Swagger, Postman ou Insomnia pour tester directement.</p>
-</li>
-<li>
-<p><strong>Contextualisation</strong> : Expliquez les cas d’usage, limitations, erreurs courantes.</p>
-</li>
-</ul>
-<h2 id="documentation-avec-postman">Documentation avec Postman<a class="headerlink" href="#documentation-avec-postman" title="Permanent link">&para;</a></h2>
-<p>Créer une documentation avec Postman</p>
-<p><strong>Postman</strong> est à la fois un client d’API et un outil de documentation. Voici les étapes :</p>
-<h3 id="etapes">📌 Étapes<a class="headerlink" href="#etapes" title="Permanent link">&para;</a></h3>
+<div class="admonition warning attention">
+<p class="admonition-title">Warning</p>
+<p>Pas de projet dans le projet</p>
+</div>
+<h2 id="commits-clairs-et-frequents">Commits clairs et fréquents<a class="headerlink" href="#commits-clairs-et-frequents" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Créer une collection</strong> : Regroupe vos requêtes (GET, POST, etc.) dans une collection Postman.</li>
-<li>
-<p><strong>Documenter chaque requête</strong> :</p>
-</li>
-<li>
-<p>Nom clair</p>
-</li>
-<li>Description (but, paramètres, exemple de réponse)</li>
-<li>Ajouter des exemples de requêtes/réponses</li>
-<li>
-<p><strong>Générer la documentation automatiquement</strong> :</p>
-</li>
-<li>
-<p>Cliquez sur la collection → "View Documentation"</p>
-</li>
-<li>Personnalisez le rendu</li>
-<li>Cliquez sur "Publish Docs" pour partager un lien public ou privé</li>
+<li>Des messages de commit explicites :</li>
+<li>Commits fréquents = historique compréhensible et possibilité de revenir en arrière facilement.</li>
 </ol>
-<h3 id="avantages">✅ Avantages<a class="headerlink" href="#avantages" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Facile à utiliser</li>
-<li>Interface graphique</li>
-<li>Documentation interactive</li>
-</ul>
-<h2 id="documentation-avec-openapi">Documentation avec OpenAPI<a class="headerlink" href="#documentation-avec-openapi" title="Permanent link">&para;</a></h2>
-<p><strong>OpenAPI</strong> (anciennement Swagger) est un standard de description d’API REST.</p>
-<h3 id="etapes_1">📌 Étapes<a class="headerlink" href="#etapes_1" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Créer un fichier YAML ou JSON</strong> qui décrit l'API :</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="w">   </span><span class="nt">openapi</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.0.0</span>
-<span class="w">   </span><span class="nt">info</span><span class="p">:</span>
-<span class="w">     </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">API de gestion de tâches</span>
-<span class="w">     </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
-<span class="w">   </span><span class="nt">paths</span><span class="p">:</span>
-<span class="w">     </span><span class="nt">/taches</span><span class="p">:</span>
-<span class="w">       </span><span class="nt">get</span><span class="p">:</span>
-<span class="w">         </span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Liste des tâches</span>
-<span class="w">         </span><span class="nt">responses</span><span class="p">:</span>
-<span class="w">           </span><span class="s">&#39;200&#39;</span><span class="p p-Indicator">:</span>
-
-<span class="w">             </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Succès</span>
+<div class="highlight"><pre><span></span><code>✅ Bon : &quot;Corrige bug d’affichage du tableau Markdown&quot;
+❌ Mauvais : &quot;fix&quot; ou &quot;update&quot;
 </code></pre></div>
-<p><strong>yaml</strong> (Yet Another Markup Language) : Langage de sérialisation de données utilisé pour l'écriture de fichier de configuration.  </p>
+<h3 id="utilisation-de-branches">Utilisation de branches<a class="headerlink" href="#utilisation-de-branches" title="Permanent link">&para;</a></h3>
 <ol>
-<li>
-<p><strong>Utiliser un outil comme Swagger UI ou Redoc</strong> pour afficher une documentation lisible :</p>
-</li>
-<li>
-<p>Swagger Editor (<a href="https://editor.swagger.io">https://editor.swagger.io</a>)</p>
-</li>
-<li>Redoc (<a href="https://github.com/Redocly/redoc">https://github.com/Redocly/redoc</a>)</li>
+<li>Ne travaille <strong>pas directement sur <code>main</code></strong>. Utilise une branche pour chaque fonctionnalité ou correction.</li>
 </ol>
-<h3 id="avantages_1">✅ Avantages<a class="headerlink" href="#avantages_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Standard reconnu</li>
-<li>Compatible avec de nombreux outils</li>
-<li>Génération automatique de code possible</li>
-</ul>
-<hr />
-<h2 id="documentation-avec-bruno">Documentation avec Bruno<a class="headerlink" href="#documentation-avec-bruno" title="Permanent link">&para;</a></h2>
-<p><strong>Bruno</strong> est un outil open-source pour tester des API REST, alternatif à Postman.</p>
-<h3 id="etapes_2">📌 Étapes<a class="headerlink" href="#etapes_2" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Créez un projet Bruno (dans un dossier local)</li>
-<li>Chaque requête est un fichier <code>.bru</code> (au format texte)</li>
-<li>Les métadonnées permettent d’ajouter des descriptions, des tags, etc.</li>
-<li>Bruno ne génère pas automatiquement une documentation HTML mais facilite une structuration textuelle propre dans Git.</li>
-</ol>
-<h3 id="avantages_2">✅ Avantages<a class="headerlink" href="#avantages_2" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Léger et basé sur des fichiers texte</li>
-<li>Idéal pour Git</li>
-<li>Open-source et rapide</li>
-</ul>
-<hr />
-<h2 id="faire-une-documentation-vanilla">Faire une documentation vanilla<a class="headerlink" href="#faire-une-documentation-vanilla" title="Permanent link">&para;</a></h2>
-<p>Il est possible de créer sans logiciel. Par exemple, avec un <strong>document Markdown</strong>, Word ou PDF :</p>
-<h3 id="structure-typique">Structure typique<a class="headerlink" href="#structure-typique" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code># API de gestion des utilisateurs
-
-## GET /users
-- **Description** : Liste tous les utilisateurs
-- **Paramètres** :
-  - `page` (int) : Numéro de page
-- **Réponse** :
-[
-  { &quot;id&quot;: 1, &quot;nom&quot;: &quot;Jean&quot; },
-  { &quot;id&quot;: 2, &quot;nom&quot;: &quot;Marie&quot; }
-]
-
-## POST /users
-
-* **Description** : Crée un nouvel utilisateur
-* **Corps JSON** :
-{
-  &quot;nom&quot;: &quot;Jean Dupont&quot;
-}
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feat/nouvelle-fonction
 </code></pre></div>
-<p>Tu peux aussi utiliser <strong>Google Docs, Notion, ou même un README.md sur GitHub</strong>.</p>
-<hr />
+<h2 id="pull-requests-pr">Pull Requests (PR)<a class="headerlink" href="#pull-requests-pr" title="Permanent link">&para;</a></h2>
+<p>Faire une <strong>PR</strong> pour intégrer ton travail à <code>main</code> et permettre la revue de code (même pour un seul developpeur, c’est une bonne habitude !).</p>
+<h2 id="utilisation-des-issues">Utilisation des Issues<a class="headerlink" href="#utilisation-des-issues" title="Permanent link">&para;</a></h2>
+<p>Utiliser les <strong>issues</strong> pour suivre les bugs, idées ou tâches à faire.</p>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<p>Mettre de la documentation dans un repo</p>
+<p>Il est <strong>recommandé</strong> de mettre de la documentation dans un repo :</p>
+<ul>
+<li><strong>README.md</strong> : pour l’intro et les instructions de base</li>
+<li><strong><code>/docs/</code></strong> : pour des documents plus détaillés</li>
+<li>Génération d'un site statique à partir de cette doc avec <strong>GitHub Pages</strong> (ex : avec MkDocs ou Docusaurus)</li>
+</ul>
+<h2 id="les-fichiers-ignores">Les fichiers ignorés<a class="headerlink" href="#les-fichiers-ignores" title="Permanent link">&para;</a></h2>
+<p>Le fichier .gitignore sert à exclure certains fichiers ou dossiers du suivi Git. Cela évite d’envoyer sur GitHub des fichiers sensibles, inutiles, temporaires ou propres à votre environnement local.</p>
+<h3 id="que-faut-il-generalement-ignorer">Que faut-il généralement ignorer ?<a class="headerlink" href="#que-faut-il-generalement-ignorer" title="Permanent link">&para;</a></h3>
+<p>Voici une base typique :
+<div class="highlight"><pre><span></span><code><span class="gh"># Fichiers système</span>
+.DS_Store
+Thumbs.db
+
+<span class="gh"># Environnements virtuels et variables sensibles</span>
+venv/
+.env
+*.env
+
+<span class="gh"># Fichiers de configuration personnels (Python, logs, cache)</span>
+*.pyc
+*.log
+*.sqlite3
+<span class="gs">__pycache__</span>/
+
+<span class="gh"># Dossiers générés (build / static / MkDocs / dist)</span>
+site/
+dist/
+build/
+
+<span class="gh"># Dépendances</span>
+node_modules/
+vendor/
+
+<span class="gh"># Fichiers d’IDE ou éditeurs</span>
+.vscode/
+.idea/
+</code></pre></div></p>
+<h3 id="bonnes-pratiques-associees">Bonnes pratiques associées<a class="headerlink" href="#bonnes-pratiques-associees" title="Permanent link">&para;</a></h3>
+<p>Ne jamais commettre de fichiers dans node_modules/ ou vendor/ — ces dossiers sont recréés automatiquement via npm install ou composer install.</p>
+<p>Fournir un fichier package.json ou composer.json (équivalent de requirements.txt) dans votre dépôt pour faciliter l’installation des dépendances.</p>
+<p>Conserver les scripts de build (ex. : build.sh, Makefile, ou mkdocs.yml) dans le dépôt pour que le projet reste facilement reproductible.</p>
+<h2 id="les-variables-denvironnement">Les variables d'environnement<a class="headerlink" href="#les-variables-denvironnement" title="Permanent link">&para;</a></h2>
+<h3 id="le-fichier-env">Le fichier .env<a class="headerlink" href="#le-fichier-env" title="Permanent link">&para;</a></h3>
+<p>Le fichier .env contient des variables d’environnement sensibles, comme :</p>
+<div class="highlight"><pre><span></span><code><span class="na">API_KEY</span><span class="o">=</span><span class="s">abcdefgh12345678</span>
+<span class="na">DATABASE_URL</span><span class="o">=</span><span class="s">postgres://user:pass@host/db</span>
+<span class="na">SECRET_KEY</span><span class="o">=</span><span class="s">super-secret-value</span>
+</code></pre></div>
+<p>Ce fichier ne doit jamais être versionné, car il contient des données confidentielles.</p>
+<p>Vous devez donc ajouter .env dans votre .gitignore :
+<div class="highlight"><pre><span></span><code>.env
+</code></pre></div></p>
+<h3 id="le-fichier-envexample">Le fichier .env.example<a class="headerlink" href="#le-fichier-envexample" title="Permanent link">&para;</a></h3>
+<p>Ce fichier est une copie publique du fichier .env, sans les valeurs sensibles, mais avec les noms des variables attendues.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cela permet aux autres contributeurs de comprendre quelles variables ils doivent définir.</p>
+</div>
+<p>Exemple :
+<div class="highlight"><pre><span></span><code><span class="c1"># .env.example</span>
+<span class="na">API_KEY</span><span class="o">=</span><span class="s">your-api-key-here</span>
+<span class="na">DATABASE_URL</span><span class="o">=</span><span class="s">your-db-url-here</span>
+<span class="na">SECRET_KEY</span><span class="o">=</span><span class="s">change-me</span>
+</code></pre></div></p>
+<p>Cela montre clairement à vos collègues ou utilisateurs quelles variables sont nécessaires sans exposer vos propres données.</p>
 
 
 

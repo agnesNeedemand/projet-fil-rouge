@@ -47,4 +47,5 @@ https://TONUTILISATEUR.github.io/TONREPO/
 - 📝 A faire
 - ✏️ En cours de rédaction
 - 🔒 Restreint
+- 🔧 Paramètre
 

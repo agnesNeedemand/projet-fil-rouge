@@ -1,6 +1,6 @@
 # ✅ Check-list Sécurité
 
-## Code Backend 
+## ⚙️ Code Backend 
 
 - [x] Utiliser des requêtes préparées (PDO, Doctrine, Eloquent, etc.)
 - [x] Valider toutes les données en entrée
@@ -24,7 +24,7 @@
 - [x] Journaliser les actions sensibles (connexion, modification de données, etc.)
 - [x] Utiliser un analyseur de code statique PHPStan (niveau 5 minimum ) 
 
-## Frontend
+## 🖼️ Frontend
 
 - [x] Valider les formulaires côté client (feedback immédiat, economie de requete serveur)
 
@@ -38,7 +38,7 @@
 - [x] Utiliser npm audit pour détecter les dépendances vulnérables
 - [x] Éviter le stockage de données sensibles dans le localStorage/sessionStorage
 
-## Base de données
+## 🗄️ Base de données
 
 - [x] Utiliser un utilisateur MySQL avec droits limités
 - [x] Définir des contraintes d’intégrité (clé étrangère, NOT NULL, UNIQUE…)

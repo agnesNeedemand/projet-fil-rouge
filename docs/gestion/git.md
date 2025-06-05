@@ -1,6 +1,16 @@
 # Bonnes pratiques sur GitHub
 
-## Structure claire du dépôt (repo)
+## 🔧 Préparation du projet
+
+- Créer le dépôt GitHub
+- Ajouter un fichier README.md
+- Ajouter un `.gitignore`
+- Définir un fichier `LICENSE`
+
+## 📁 Structure claire du dépôt
+
+!!! note
+    repo = dépot
 
 1. Utiliser une structure propre
 2. Le fichier README.md est essentiel pour expliquer l'objectif du projet, comment l’installer, l’utiliser, etc.
@@ -20,7 +30,7 @@ Exemple :
 !!! Warning Attention
     Pas de projet dans le projet
 
-## Commits clairs et fréquents
+## 💬 Commits clairs et fréquents
 
 1. Des messages de commit explicites :
 2. Commits fréquents = historique compréhensible et possibilité de revenir en arrière facilement.
@@ -30,7 +40,7 @@ Exemple :
   ❌ Mauvais : "fix" ou "update"
   ```
 
-### Utilisation de branches
+## ➰ Utilisation de branches
 
 1. Ne travaille **pas directement sur `main`**. Utilise une branche pour chaque fonctionnalité ou correction.
 
@@ -38,15 +48,15 @@ Exemple :
 git checkout -b feat/nouvelle-fonction
 ```
 
-## Pull Requests (PR)
+## ✅ Pull Requests (PR)
 
 Faire une **PR** pour intégrer ton travail à `main` et permettre la revue de code (même pour un seul developpeur, c’est une bonne habitude !).
 
-## Utilisation des Issues
+## 📝 Utilisation des Issues
 
 Utiliser les **issues** pour suivre les bugs, idées ou tâches à faire.
 
-## Documentation 
+## 📘 Documentation 
 
 Mettre de la documentation dans un repo
 
@@ -57,7 +67,7 @@ Il est **recommandé** de mettre de la documentation dans un repo :
 * Génération d'un site statique à partir de cette doc avec **GitHub Pages** (ex : avec MkDocs ou Docusaurus)
 
 
-## Les fichiers ignorés
+## ❌ Les fichiers ignorés
 
 Le fichier .gitignore sert à exclure certains fichiers ou dossiers du suivi Git. Cela évite d’envoyer sur GitHub des fichiers sensibles, inutiles, temporaires ou propres à votre environnement local.
 
@@ -103,7 +113,7 @@ Fournir un fichier package.json ou composer.json (équivalent de requirements.tx
 Conserver les scripts de build (ex. : build.sh, Makefile, ou mkdocs.yml) dans le dépôt pour que le projet reste facilement reproductible.
 
 
-## Les variables d'environnement
+## 🛠️ Les variables d'environnement
 
 ### Le fichier .env
 
