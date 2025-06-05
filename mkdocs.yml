@@ -7,7 +7,13 @@ theme:
 
 nav:
   - Accueil: index.md 
-  - Sécurité: securite.md
+  - Conception: 
+    - conception/index.md
+  - Gestion de projet:
+    - gestion/index.md
+    - gestion/git.md
+  - Sécurité: 
+    - securite/index.md
   - Documentation: 
     - documentation/index.md
     - Documentation API: documentation/api.md

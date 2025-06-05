@@ -49,4 +49,4 @@
 - [x] Ajouter des triggers pour protéger les données sensibles ou historiques
 - [x] Mettre en place des sauvegardes régulières
 - [x] Limiter les acces avec GANTT si possible
-- [x] Conserver toutdes historique, rien n'est vraiment effacer mais tout est archiver.
+- [x] Conserver des historiques, rien n'est vraiment effacer mais tout est archiver.
