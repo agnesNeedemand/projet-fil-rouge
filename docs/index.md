@@ -32,7 +32,7 @@ Bienvenue dans la documentation du projet. Cette page vous guide à travers les 
 
 > Bonnes pratiques, gestion des accès, sécurité des données et audit.
 
-👉 [Accéder à la section Sécurité](securite/index.md)
+👉 [Accéder à la section Sécurité](qualite/index.md)
 
 ---
 
