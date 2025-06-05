@@ -8,7 +8,7 @@ theme:
 nav:
   - Accueil: index.md 
   - Conception: 
-    - conception/index.md
+    - Introduction: conception/index.md
   - Gestion de projet:
     - Introduction: gestion/index.md
     - Versioning: gestion/git.md
