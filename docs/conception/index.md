@@ -27,5 +27,3 @@ Pensez à la testabilité de votre projet dès cette étape. Définissez des sc�
 ## 6. Adoptez une approche itérative
 
 Plutôt qu’un développement en bloc, privilégiez les cycles courts avec des livraisons intermédiaires (approche agile, prototypage). Cela permet de valider régulièrement les orientations prises, avec l’implication des utilisateurs.
-
-Ce cadre vous aidera à concevoir des projets informatiques robustes, efficaces et adaptés aux attentes. 
