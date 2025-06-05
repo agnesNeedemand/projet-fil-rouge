@@ -1,4 +1,4 @@
-# les différents types de tests
+# Les différents types de tests
 
 ## 1. Les tests unitaires
 

@@ -25,7 +25,7 @@ nav:
     - Checklist: securite/index.md
     - Danger des dépendances: securite/dependances.md
   - Critères de Qualité:
-    - Introduction: qualite/criteres.md
+    - Introduction: qualite/index.md
     - Testabilité: qualite/tests.md
   - Documentation: 
     - Introduction: documentation/index.md
