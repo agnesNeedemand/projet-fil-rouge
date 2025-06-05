@@ -20,8 +20,6 @@ Exemple :
 !!! Danger Attention
     Pas de projet dans le projet
 
-
-
 ## Commits clairs et fréquents
 
 1. Des messages de commit explicites :
@@ -32,70 +30,64 @@ Exemple :
   ❌ Mauvais : "fix" ou "update"
   ```
 
-#### 3. **Utilise les branches**
+### Utilisation de branches
 
-* Ne travaille **pas directement sur `main`**. Utilise une branche pour chaque fonctionnalité ou correction.
+1. Ne travaille **pas directement sur `main`**. Utilise une branche pour chaque fonctionnalité ou correction.
 
-  ```
-  git checkout -b feat/nouvelle-fonction
-  ```
+```bash
+git checkout -b feat/nouvelle-fonction
+```
 
-#### 4. **Pull Requests (PR)**
+## Pull Requests (PR)
 
-* Fais une **PR** pour intégrer ton travail à `main` et permettre la revue de code (même pour toi seul, c’est une bonne habitude !).
+Faire une **PR** pour intégrer ton travail à `main` et permettre la revue de code (même pour un seul developpeur, c’est une bonne habitude !).
 
-#### 5. **Issues**
+## Utilisation des Issues
 
-* Utilise les **issues** pour suivre les bugs, idées ou tâches à faire.
+Utiliser les **issues** pour suivre les bugs, idées ou tâches à faire.
 
----
+## 📘 **Mettre de la documentation dans un repo**
 
-### 📘 **Mettre de la documentation dans un repo**
-
-Oui, c’est **tout à fait normal et recommandé** de mettre de la documentation dans un repo :
+Il est **recommandé** de mettre de la documentation dans un repo :
 
 * **README.md** : pour l’intro et les instructions de base
 * **`/docs/`** : pour des documents plus détaillés
-* Tu peux aussi générer un site statique à partir de cette doc avec **GitHub Pages** (ex : avec MkDocs ou Docusaurus)
+* Génération d'un site statique à partir de cette doc avec **GitHub Pages** (ex : avec MkDocs ou Docusaurus)
 
----
 
-### 📄 **Tableaux Markdown mal affichés ?**
+## Les fichiers ignorés
 
-Oui, c’est possible si :
+Le fichier .gitignore sert à exclure certains fichiers ou dossiers du suivi Git. Cela évite d’envoyer sur GitHub des fichiers sensibles, inutiles, temporaires ou propres à votre environnement local.
 
-* Le tableau est mal formé
-* Tu utilises un éditeur qui ne rend pas bien le Markdown
-* GitHub n’interprète pas bien le format à cause d'un espace ou retour à la ligne manquant
+### Que faut-il généralement ignorer ?
 
-#### ✅ Exemple correct :
-
+Voici une base typique :
 ```markdown
-| Nom      | Âge | Métier        |
-|----------|-----|---------------|
-| Alice    | 30  | Développeuse  |
-| Bob      | 25  | Designer      |
+# 📁 Fichiers système
+.DS_Store
+Thumbs.db
+
+# 🧪 Environnements virtuels et variables sensibles
+venv/
+.env
+*.env
+
+# ⚙️ Fichiers de configuration personnels (Python, logs, cache)
+*.pyc
+*.log
+*.sqlite3
+__pycache__/
+
+# 🚧 Dossiers générés (build / static / MkDocs / dist)
+site/
+dist/
+build/
+
+# 📦 Dépendances
+node_modules/
+vendor/
+
+# 🧠 Fichiers d’IDE ou éditeurs
+.vscode/
+.idea/
 ```
-
-#### ❌ Exemple incorrect (lignes mal alignées ou séparateur incorrect) :
-
-```markdown
-| Nom | Âge | Métier
-|---|--|---
-Alice | 30 | Développeuse
-Bob | 25 | Designer
-```
-
-Teste-le directement dans le **Preview** sur GitHub ou dans un éditeur comme **Typora** ou **Obsidian**.
-
----
-
-### 🔧 Ressources pour apprendre GitHub
-
-* [GitHub Docs (officiel)](https://docs.github.com/)
-* [Git Handbook](https://guides.github.com/introduction/git-handbook/)
-* [Le cours "Apprendre Git" d'OpenClassrooms](https://openclassrooms.com/fr/courses/2344111-gerez-votre-code-avec-git-et-github)
-
----
-
-Souhaites-tu un mini-guide PDF pour t’entraîner étape par étape à utiliser Git/GitHub avec un exemple concret ?

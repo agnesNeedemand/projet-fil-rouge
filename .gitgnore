@@ -1,0 +1,27 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Environnements virtuels et variables sensibles
+venv/
+.env
+*.env
+
+# Fichiers de configuration personnels (Python, logs, cache)
+*.pyc
+*.log
+*.sqlite3
+__pycache__/
+
+# Dossiers générés (build / static / MkDocs / dist)
+site/
+dist/
+build/
+
+# Dépendances
+node_modules/
+vendor/
+
+# Fichiers d’IDE ou éditeurs
+.vscode/
+.idea/
