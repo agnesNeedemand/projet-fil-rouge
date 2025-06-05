@@ -34,3 +34,17 @@ NOte : Ctrl + C pour stop le serveur
 ```
 https://TONUTILISATEUR.github.io/TONREPO/
 ```
+
+## Liste des icones 
+
+- ✔️ Étape validée
+- 🕒 En attente
+- ❌ Problème à corriger
+- ⚠️ Vérification nécessaire
+- ✅ Succes
+- 🟡 En cours
+- 🔴 Erreur
+- 📝 A faire
+- ✏️ En cours de rédaction
+- 🔒 Restreint
+

@@ -1,13 +1,24 @@
 site_name: Documentation PFR
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+
 nav:
   - Accueil: index.md 
   - Sécurité: securite.md
+  - Documentation: 
+    - documentation/index.md
+    - Documentation API: documentation/api.md
 markdown_extensions:
   - admonition
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.superfences
   - tables
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.tasklist:
       custom_checkbox: true
