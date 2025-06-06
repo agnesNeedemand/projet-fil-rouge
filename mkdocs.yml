@@ -35,6 +35,7 @@ nav:
     - Documentation API: documentation/api.md
     - MKdocs: documentation/mkdocs.md
   - Environnement & Outils:
+    - Introduction: env/index.md
     - Créer un environnement Python: env/python.md
     - Checklist de production: env/checklist.md
     - Projet partiellement terminé : env/incomplet.md
