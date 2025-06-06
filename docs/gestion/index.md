@@ -1,4 +1,6 @@
-# La gestion de projet : rappels et bonnes pratiques
+# La gestion de projet 
+
+***Rappels et bonnes pratiques***
 
 La gestion de projet est une compétence clé dans de nombreux domaines professionnels. En tant qu’étudiant déjà familiarisé avec ses principes fondamentaux, il est essentiel de consolider vos acquis par des pratiques rigoureuses et adaptées aux contextes variés que vous rencontrerez.
 

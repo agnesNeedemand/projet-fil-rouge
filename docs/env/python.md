@@ -6,7 +6,7 @@ Cet environnement permet d’installer des dépendances spécifiques sans impact
 
 📌 Prérequis : Python 3.10 installé sur votre machine.
 
-## ✅ Étapes pour créer un environnement virtuel avec `venv` :
+## Étapes pour créer un environnement virtuel avec `venv` :
 
 1. **Aller dans le répertoire de travail :**
 
@@ -144,6 +144,6 @@ Pour les personnes qui débutent en Python, la gestion d’environnements virtue
 
 L’utilisation d’un environnement virtuel ajoute un peu de complexité et d’occupation disque, mais ces inconvénients sont généralement négligeables au regard des bénéfices en matière de fiabilité, d’isolation et de reproductibilité. Dans un contexte professionnel ou multi-projets, l’usage d’environnements virtuels est vivement recommandé.
 
-Voir aussi les outils `conda` et `pipenv`
+> Voir aussi les outils `conda` et `pipenv`
 
 
