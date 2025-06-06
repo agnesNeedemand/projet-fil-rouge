@@ -12,7 +12,7 @@ L’objectif ici est de **vous rendre autonome** sur ces aspects techniques esse
 - [X] **Créer un environnement Python**
   Guide pas à pas pour mettre en place un environnement virtuel Python adapté à votre projet.
 
-  👉 [Accéder à la section Environnement Python](env/python.md)
+  👉 [Accéder à la section Environnement Python](./python.md)
 
 - [ ] **Installer Git et VS Code**
   Rappels sur les outils de versionnement et l’éditeur de code le plus utilisé en entreprise.
