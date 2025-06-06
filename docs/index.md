@@ -44,9 +44,12 @@ Bienvenue dans la documentation du projet. Cette page vous guide à travers les 
 
 ---
 
-## 📌 Astuce
+## 🛠️ Environnement & outils
 
-Vous pouvez naviguer aussi via le menu latéral à gauche, ou les onglets en haut (si activés via `navigation.tabs`).
+> Présentation des outils et précautions à prendre sur l'environnement de travail.
+
+👉 [Accéder à la section Environnement & Outils](env/index.md)
+
 
 
 
