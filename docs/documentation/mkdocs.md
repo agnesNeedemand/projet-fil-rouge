@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Memo MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -27,9 +27,15 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 | 4     | Tester en local avec `serve`       |
 | 5     | Déployer avec `gh-deploy`          |
 
-NOte : Ctrl + C pour stop le serveur
+Note : Ctrl + C pour stop le serveur
+
+!!! note 
+    Ctrl + C dans le terminal pour stop le serveur
+
 
 ## Site accessible 
+
+La publication se fait sur Git pages
 
 ```
 https://TONUTILISATEUR.github.io/TONREPO/

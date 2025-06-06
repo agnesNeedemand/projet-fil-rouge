@@ -24,16 +24,19 @@ nav:
   - Sécurité: 
     - Checklist: securite/index.md
     - Danger des dépendances: securite/dependances.md
+    - Protection des données: securite/protection.md
   - Critères de Qualité:
     - Introduction: qualite/index.md
     - Testabilité: qualite/tests.md
   - Documentation: 
     - Introduction: documentation/index.md
     - Documentation API: documentation/api.md
+    - MKdocs: documentation/mkdocs.md
   - Environnement & Outils:
     - Créer un environnement Python: env/python.md
     - Checklist de production: env/checklist.md
     - Projet partiellement terminé : env/incomplet.md
+    - SQL : env/sql.md
 markdown_extensions:
   - admonition
   - pymdownx.emoji:
