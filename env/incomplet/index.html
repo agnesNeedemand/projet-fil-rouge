@@ -302,7 +302,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../python/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -973,6 +973,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../python/" class="md-nav__link">
         
   
@@ -1086,15 +1109,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#reste-a-faire-backlog-non-finalise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reste à faire (Backlog non finalisé)
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1178,15 +1192,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#reste-a-faire-backlog-non-finalise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reste à faire (Backlog non finalisé)
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1218,13 +1223,42 @@ Dans un contexte professionnel, il est courant de livrer des versions itérative
 <p>Voici plusieurs manières de documenter ce qui reste à faire :</p>
 <h3 id="1-fichier-releasenotesmd-ou-section-reste-a-faire">🗂️ 1. Fichier <code>RELEASENOTES.md</code> ou section “Reste à faire”<a class="headerlink" href="#1-fichier-releasenotesmd-ou-section-reste-a-faire" title="Permanent link">&para;</a></h3>
 <p>Créez un petit fichier texte ou ajoutez une section dans le <code>README.md</code> :</p>
-<p>```markdown</p>
-<h2 id="reste-a-faire-backlog-non-finalise">Reste à faire (Backlog non finalisé)<a class="headerlink" href="#reste-a-faire-backlog-non-finalise" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="gu">## Reste à faire (Backlog non finalisé)</span>
+
+<span class="k">-</span><span class="w"> </span>Intégration du système de paiement (non prioritaire)
+<span class="k">-</span><span class="w"> </span>Mise en place de l’export PDF
+<span class="k">-</span><span class="w"> </span>Page de gestion des utilisateurs en cours de développement
+</code></pre></div>
+<p>🧭 2. Commentaires dans le code</p>
+<p>Les parties non terminées peuvent être :</p>
 <ul>
-<li>Intégration du système de paiement (non prioritaire)</li>
-<li>Mise en place de l’export PDF</li>
-<li>Page de gestion des utilisateurs en cours de développement</li>
+<li>
+<p>commentées temporairement (// à finaliser)</p>
+</li>
+<li>
+<p>ou encadrées avec un avertissement clair, sans être actives dans la version de <strong>production</strong>.</p>
+</li>
 </ul>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$env</span> <span class="o">!=</span> <span class="s1">&#39;prod&#39;</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s2">&quot;TODO : implémenter la page des conditions générales&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div>
+<p>🚫 Ce qu’il ne faut pas faire</p>
+<p>❌ Laisser du code cassé ou non fonctionnel dans la version finale.</p>
+<p>❌ Livrer un projet sans mentionner les fonctionnalités manquantes.</p>
+<p>❌ Inclure du contenu à moitié implémenté qui perturbe l’expérience utilisateur.</p>
+<p>❌ Avoir des erreurs visibles à l’exécution ou à la compilation.</p>
+<p>💡 Conseil pour la soutenance</p>
+<p>Assumez ce qui n’est pas terminé :
+expliquez ce qui manque, pourquoi, et comment vous l’auriez fait si le temps avait permis. Cela montre votre capacité à gérer un projet et à prioriser.</p>
+<pre><code>🎓 Exemple :
+“La partie gestion des droits utilisateurs n’est pas encore fonctionnelle, mais j’ai préparé la structure de code pour l’intégrer plus tard. Le reste de l’application est stable.”
+</code></pre>
+<p>📌 Rappel</p>
+<pre><code>👉 Un projet bien fini à 80 % vaut mieux qu’un projet instable à 100 %.
+</code></pre>
 
 
 
