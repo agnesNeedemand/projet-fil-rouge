@@ -31,9 +31,9 @@ nav:
     - Introduction: documentation/index.md
     - Documentation API: documentation/api.md
   - Environnement & Outils:
-    - Créer un environnement Python: docs/env/python.md
-    - Checklist de production: docs/env/checklist.md
-    - Projet partiellement terminé : docs/env/incomplet.md
+    - Créer un environnement Python: env/python.md
+    - Checklist de production: env/checklist.md
+    - Projet partiellement terminé : env/incomplet.md
 markdown_extensions:
   - admonition
   - pymdownx.emoji:
